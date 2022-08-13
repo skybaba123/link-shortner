@@ -1,0 +1,38 @@
+.item {
+  width: 70%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 5px;
+  margin-top: 1.2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: 600;
+}
+
+.item p {
+  color: hsl(255, 11%, 22%);
+}
+
+.item div {
+  display: flex;
+  gap: 2rem;
+}
+
+.item div p {
+  color: hsl(180, 66%, 49%);
+}
+
+.item div button {
+  cursor: pointer;
+  font-weight: 600;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+}

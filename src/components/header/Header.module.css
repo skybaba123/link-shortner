@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  min-width: 100%;
+  transform: translateY(10rem);
+  z-index: 10;
+}
+header button {
+  width: 135px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: hsl(180, 66%, 49%);
+}
+
+header div {
+  transform: translateX(-1.5rem);
+}
+
+header div h1 {
+  font-weight: 600;
+  font-size: 60px;
+  color: hsl(255, 11%, 22%);
+}
+
+header img {
+  width: 600px;
+  height: auto;
+  transform: translateX(10rem);
+}

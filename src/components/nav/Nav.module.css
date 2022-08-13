@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  justify-content: space-around;
+  position: fixed;
+  align-items: center;
+  height: fit-content;
+  background-color: white;
+  z-index: 100;
+}
+
+.navLeft {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLeft h1 {
+  transform: translateY(-5px);
+}
+
+.navRight {
+  display: flex;
+  gap: 2rem;
+}
+
+.navRight button {
+  width: 135px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: hsl(180, 66%, 49%);
+}

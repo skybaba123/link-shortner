@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df38eb71.css",
+    "main.js": "/static/js/main.3517fc9b.js",
+    "static/js/787.77076520.chunk.js": "/static/js/787.77076520.chunk.js",
+    "static/media/illustration-working.svg": "/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/bg-boost-desktop.svg": "/static/media/bg-boost-desktop.772154c9b0e451733f5e.svg",
+    "static/media/icon-instagram.svg": "/static/media/icon-instagram.df5873287e1c06a0fe74440f6ccd8394.svg",
+    "static/media/icon-pinterest.svg": "/static/media/icon-pinterest.a2d25ab4c70b78c4028f25323009cc58.svg",
+    "static/media/bg-shorten-desktop.svg": "/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
+    "index.html": "/index.html",
+    "static/media/icon-twitter.svg": "/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
+    "static/media/icon-facebook.svg": "/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
+    "main.df38eb71.css.map": "/static/css/main.df38eb71.css.map",
+    "main.3517fc9b.js.map": "/static/js/main.3517fc9b.js.map",
+    "787.77076520.chunk.js.map": "/static/js/787.77076520.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df38eb71.css",
+    "static/js/main.3517fc9b.js"
+  ]
+}
