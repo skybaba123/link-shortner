@@ -7,6 +7,7 @@
   align-items: center;
   gap: 1rem;
   border-radius: 15px;
+  transform: translateY(-1rem);
 }
 
 .container input {
@@ -34,4 +35,19 @@
 
 .container button:hover {
   background-color: hsl(180, 70%, 68%);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+  }
+
+  .container button,
+  .container input {
+    width: 85%;
+  }
 }

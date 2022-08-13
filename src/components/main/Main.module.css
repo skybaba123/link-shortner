@@ -38,6 +38,7 @@ main {
 }
 
 .section2 div {
+  border-radius: 5px;
   background-color: white;
   height: 180px;
   width: 250px;
@@ -84,4 +85,17 @@ main {
 }
 .section3 button:hover {
   background-color: hsl(180, 59%, 61%);
+}
+
+@media only screen and (max-width: 803px) {
+  .section2 {
+    flex-direction: column;
+  }
+  .line {
+    margin-top: -30rem;
+    align-self: center;
+    height: 30rem;
+    width: 8px;
+    transform: translateY(40rem);
+  }
 }

@@ -10,6 +10,11 @@ const Nav = () => {
         <p>Pricing</p>
         <p>Resources</p>
       </div>
+      <div className={classes.handbuger}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div className={classes.navRight}>
         <p>Login</p>
         <button>Sign Up</button>

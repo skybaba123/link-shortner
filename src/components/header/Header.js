@@ -5,11 +5,11 @@ const Header = () => {
   return (
     <header>
       <div className={classes.headerLeft}>
-        <h1>
+        <h1 className={classes.mainText}>
           More than just
           <br /> shorter links
         </h1>
-        <p>
+        <p className={classes.subText}>
           Build your brand's recognition and get detailed
           <br />
           insights on how your links are performing

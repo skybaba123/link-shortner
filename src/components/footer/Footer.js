@@ -12,21 +12,21 @@ const Footer = () => {
 
       <div className={classes.about}>
         <div>
-          <p>Feature</p>
+          <h3>Feature</h3>
           <p>Link Shortening</p>
           <p>Branded Links</p>
           <p>Analytics</p>
         </div>
 
         <div>
-          <p>Resources</p>
+          <h3>Resources</h3>
           <p>Blog</p>
           <p>Developer</p>
           <p>Support</p>
         </div>
 
         <div>
-          <p>company</p>
+          <h3>company</h3>
           <p>About</p>
           <p>Our Team</p>
           <p>Careers</p>
