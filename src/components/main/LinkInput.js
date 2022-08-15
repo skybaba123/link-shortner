@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./LinkInput.module.css";
+import { PropagateLoader } from "react-spinners";
 
 const LinkInput = ({
   isLoading,
@@ -35,7 +36,16 @@ const LinkInput = ({
       {succes && <p style={{ color: "green", position: "absolute" }}>Succes</p>}
       {!succes ? (
         <button onClick={onSubmitHandler}>
-          {isLoading ? "Loading..." : "Shorten it!"}
+          {isLoading ? (
+            <PropagateLoader
+              color="#fff"
+              cssOverride={{
+                marginBottom: "1rem",
+              }}
+            />
+          ) : (
+            "Shorten it!"
+          )}
         </button>
       ) : (
         <button onClick={onAddToList}>Save Link</button>

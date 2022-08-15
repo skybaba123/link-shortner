@@ -1,25 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Nav.module.css";
 
-const Nav = () => {
+const MobileNav = () => {
   return (
-    <nav>
-      <div className={classes.navLeft}>
-        <h1>Shortly</h1>
+    <section className={classes.mobileNav}>
+      <div className={classes.navcontainer}>
+        <p>Shortly</p>
         <p>Feature</p>
         <p>Pricing</p>
         <p>Resources</p>
-      </div>
-      <div className={classes.handbuger}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div className={classes.navRight}>
+        <hr />
         <p>Login</p>
         <button>Sign Up</button>
       </div>
-    </nav>
+    </section>
+  );
+};
+
+const Nav = () => {
+  const [showNav, setShowNav] = useState(false);
+  const showNavHandler = () => {
+    setShowNav(!showNav);
+  };
+  return (
+    <>
+      <nav>
+        <div className={classes.navLeft}>
+          <h1>Shortly</h1>
+          <p>Feature</p>
+          <p>Pricing</p>
+          <p>Resources</p>
+        </div>
+        <div onClick={showNavHandler} className={classes.handbuger}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div className={classes.navRight}>
+          <p>Login</p>
+          <button>Sign Up</button>
+        </div>
+      </nav>
+      {showNav && <MobileNav />}
+    </>
   );
 };
 

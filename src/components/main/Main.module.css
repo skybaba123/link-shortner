@@ -40,8 +40,24 @@ main {
 .section2 div {
   border-radius: 5px;
   background-color: white;
-  height: 180px;
-  width: 250px;
+  height: auto;
+  width: 320px;
+  height: 270px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+}
+
+.section2 div h1 {
+  transform: translateY(-1rem);
+  color: hsl(259, 30%, 12%);
+  font-weight: 600;
+}
+
+.section2 div p {
+  line-height: 1.5;
+  font-weight: 600;
+  color: hsl(258, 10%, 38%);
 }
 
 .section2 .div1 {
@@ -52,6 +68,17 @@ main {
 }
 .section2 .div3 {
   transform: translateY(4.5rem);
+}
+
+.section2 .imageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: hsl(257, 27%, 26%);
+  transform: translateY(-3rem);
 }
 
 .section3 {
@@ -87,15 +114,24 @@ main {
   background-color: hsl(180, 59%, 61%);
 }
 
-@media only screen and (max-width: 803px) {
+@media only screen and (max-width: 1015px) {
   .section2 {
     flex-direction: column;
   }
+
+  .section1 {
+    margin-bottom: -8rem;
+  }
+
   .line {
     margin-top: -30rem;
     align-self: center;
-    height: 30rem;
+    height: 40rem;
     width: 8px;
-    transform: translateY(40rem);
+    transform: translateY(50rem);
+  }
+
+  .section2 .imageDiv {
+    transform: translateY(-3rem) translateX(5.5rem);
   }
 }

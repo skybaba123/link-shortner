@@ -4,7 +4,6 @@ import classes from "./LinkItems.module.css";
 const LinkItems = ({ originalUrl, shortUrl }) => {
   const [timer, setTimer] = useState(true);
 
-  console.log(shortUrl);
   const clipboard = () => {
     setTimer(false);
     navigator.clipboard.writeText(shortUrl);

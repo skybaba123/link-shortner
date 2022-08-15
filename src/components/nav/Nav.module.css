@@ -37,6 +37,48 @@ nav {
   background-color: hsl(180, 66%, 49%);
 }
 
+.mobileNav {
+  position: fixed;
+  left: 50%;
+  transform: translateY(6rem) translate(-50%);
+  z-index: 10;
+}
+
+hr {
+  width: 200%;
+}
+
+.navcontainer button {
+  width: 135px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: hsl(180, 66%, 49%);
+}
+
+.navcontainer p {
+  cursor: pointer;
+}
+.navcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(257, 27%, 26%);
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  line-height: 3;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 15px;
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     justify-content: space-between;

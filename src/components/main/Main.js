@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LinkInput from "./LinkInput";
 import LinkItems from "./LinkItems";
 import classes from "./Main.module.css";
+import brand from "./images/icon-brand-recognition.svg";
+import detailed from "./images/icon-detailed-records.svg";
+import fully from "./images/icon-fully-customizable.svg";
 
 const Main = ({
   isLoading,
@@ -12,6 +15,19 @@ const Main = ({
   setSucces,
 }) => {
   const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    if (items.length > 0)
+      localStorage.setItem("LINK_ITEM", JSON.stringify(items));
+  }, [items]);
+
+  useEffect(() => {
+    const data = localStorage.getItem("LINK_ITEM")
+      ? JSON.parse(localStorage.getItem("LINK_ITEM"))
+      : "";
+    if (data.length > 0) setItems(data);
+  }, []);
+
   const add = (newitem) => {
     setItems([newitem, ...items]);
   };
@@ -47,21 +63,39 @@ const Main = ({
       <div className={classes.line}></div>
       <section className={classes.section2}>
         <div className={classes.div1}>
-          <img />
+          <div className={classes.imageDiv}>
+            <img src={brand} alt="" />
+          </div>
+
           <h1>Brand Recognition</h1>
-          <p></p>
+          <p>
+            Boost your recognition with each click. Generic links don't mean a
+            thing. Branded links helps instil confident in your content{" "}
+          </p>
         </div>
 
         <div className={classes.div2}>
-          <img />
+          <div className={classes.imageDiv}>
+            <img src={detailed} alt="" />
+          </div>
+
           <h1>Detailed Records</h1>
-          <p></p>
+          <p>
+            Gain insights into who is clicking your links. knowing when and
+            where people engage with your content helps inform better decisions
+          </p>
         </div>
 
         <div className={classes.div3}>
-          <img />
+          <div className={classes.imageDiv}>
+            <img src={fully} alt="" />
+          </div>
+
           <h1>Fully Customizable</h1>
-          <p></p>
+          <p>
+            Improve brand awareness and content discoverability through
+            customization links. supercharging audience engagement
+          </p>
         </div>
       </section>
 
